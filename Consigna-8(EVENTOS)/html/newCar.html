@@ -1,0 +1,40 @@
+<!--Modal de Registro-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registro Vehicular</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formNewCar" onsubmit="inputDates(event)">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Marca</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Tipo</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPais" class="form-label">Pais</label>
+            <input type="text" class="form-control" id="exampleInputPais" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputDate" class="form-label">Fecha de fabricacion</label>
+            <input type="text" class="form-control" id="exampleInputDate" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputCosto" class="form-label">Costo</label>
+            <input type="text" class="form-control" id="exampleInputCosto" />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEstado" class="form-label">Estado</label>
+            <input type="text" class="form-control" id="exampleInputEstado" />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
