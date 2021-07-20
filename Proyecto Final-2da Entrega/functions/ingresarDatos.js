@@ -7,12 +7,12 @@ const newAuto = () => {
 
   inputDates.onsubmit = (e) => {
     e.preventDefault();
-    let marca = document.getElementById("inputMarca").value;
-    let type = document.getElementById("inputModel").value;
-    let country = document.getElementById("inputCountry").value;
-    let date = document.getElementById("inputDate").value;
-    let costo = document.getElementById("inputCosto").value;
-    let state = document.getElementById("inputState").value;
+    let marca = $("#inputMarca").val();
+    let type = $("#inputModel").val();
+    let country = $("#inputCountry").val();
+    let date = $("#inputDate").val();
+    let costo = $("#inputCosto").val();
+    let state = $("#inputState").val();
 
     if (marca == "" || type == "" || country == "" || date == "" || costo == "" || state == "") {
       alert("Ingesar Datos!");
