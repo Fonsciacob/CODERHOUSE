@@ -42,5 +42,5 @@ const load = () => {
   </div>
   </div>`;
 
-  document.getElementById("moduleNewCar").innerHTML = modal;
+  $("#moduleNewCar").html(modal);
 };

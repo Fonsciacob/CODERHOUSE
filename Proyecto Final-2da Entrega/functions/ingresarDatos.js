@@ -26,12 +26,12 @@ const newAuto = () => {
       //Ocultar modal
       container.hide();
       //Al enviar los datos los inputs volveran a los valores por default
-      document.getElementById("inputMarca").value = "Audi";
-      document.getElementById("inputModel").value = "";
-      document.getElementById("inputCountry").value = "Afghanistan";
-      document.getElementById("inputDate").value = "";
-      document.getElementById("inputCosto").value = "";
-      document.getElementById("inputState").value = "Nuevo";
+      $("#inputMarca").val("Audi");
+      $("#inputModel").val("");
+      $("#inputCountry").val("Afghanistan");
+      $("#inputDate").val("");
+      $("#inputCosto").val("");
+      $("#inputState").val("Nuevo");
     }
     loadTable();
   };
