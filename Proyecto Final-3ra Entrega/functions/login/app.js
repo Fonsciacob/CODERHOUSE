@@ -1,1 +1,1 @@
-modalRegisterUser();
+loadLocalUsers();

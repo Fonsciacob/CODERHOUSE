@@ -6,7 +6,7 @@ const modalRegisterUser = () => {
           <h5 class="modal-title text-light" id="exampleModalLabel">Register user</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form id="formNewCar">
+        <form id="formNewUser">
           <div class="modal-body">
             <div class="mb-3">
               <label for="inputMarca" class="form-label">Names</label>
@@ -18,7 +18,7 @@ const modalRegisterUser = () => {
             </div>
             <div class="mb-3">
               <label for="inputCountry" class="form-label">Email</label>
-              <input class="form-control" id="inputEmail"/>
+              <input class="form-control" id="inputEmailUser"/>
             </div>
             <div class="mb-3">
               <label for="inputDate" class="form-label">Password</label>
@@ -33,3 +33,5 @@ const modalRegisterUser = () => {
 
   document.getElementById("moduleRegisterUser").innerHTML = modal;
 };
+
+modalRegisterUser();
