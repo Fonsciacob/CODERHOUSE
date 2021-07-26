@@ -3,8 +3,6 @@ var automoviles = [];
 const newAuto = () => {
   const inputDates = document.getElementById("formNewCar");
 
-  const container = new bootstrap.Modal(document.getElementById("exampleModal"));
-
   inputDates.onsubmit = (e) => {
     e.preventDefault();
     let marca = $("#inputMarca").val();
@@ -24,7 +22,7 @@ const newAuto = () => {
       //Ingresar array al local storage
       localStorage.setItem("automoviles", JSON.stringify(automoviles));
       //Ocultar modal
-      container.hide();
+      $("#exampleModal").modal("hide");
       //Al enviar los datos los inputs volveran a los valores por default
       $("#inputMarca").val("Audi");
       $("#inputModel").val("");
