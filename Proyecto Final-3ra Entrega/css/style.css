@@ -1,10 +1,21 @@
+body {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+form > h1 {
+  color: white;
+}
 .inputForm {
   width: 60%;
   border-radius: 13px;
   outline: none;
   height: 2.3rem;
-  border: 1px solid rgb(0, 122, 255);
+  border: 1px solid #2c5364;
   padding: 7px;
+}
+.inputForm:focus {
+  border-color: rgb(99, 99, 102);
 }
 
 .inputs {
@@ -14,10 +25,19 @@
   margin: 15px;
 }
 
-.btn {
-  margin: 0 6px;
+.button {
+  border: 1px;
+  height: 37px;
+  width: 80px;
+  border-radius: 13px;
+  color: white;
 }
-
+.button:first-child {
+  background: rgb(0, 122, 255);
+}
+.button:last-child {
+  background: rgb(99, 99, 102);
+}
 #forms {
   display: flex;
   overflow: hidden;
@@ -25,7 +45,9 @@
   border-radius: 15px;
   height: 340px;
   align-items: center;
-  box-shadow: 0px 10px 13px -7px rgb(99, 99, 102), 5px 5px 15px 5px rgb(99, 99, 102);
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #loginUser {
   width: 490px;
@@ -37,5 +59,4 @@
 #forms > img {
   width: 250px;
   height: 340px;
-  border-radius: 15px;
 }
