@@ -23,11 +23,12 @@ inputDatesUser.onsubmit = (e) => {
     users.push(objuser);
     //Ingresa el array "users" al local storage"
     localStorage.setItem("users", JSON.stringify(users));
-    $("#registerUser").modal("hide");
     //Al enviar los datos los inputs volveran a los valores por default
     $("#inputNames").val("");
     $("#inputLastName").val("");
     $("#inputEmailUser").val("");
     $("#inputPassword").val("");
+
+    showSignIn();
   }
 };
