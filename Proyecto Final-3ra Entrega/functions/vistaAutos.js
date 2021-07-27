@@ -3,7 +3,7 @@ const loadTable = () => {
   let i = 0;
   let viewTable = "";
 
-  let objAuto = JSON.parse(localStorage.getItem("automoviles"));
+  let objAuto = JSON.parse(localStorage.getItem("automoviles")) || [];
   objAuto.forEach(
     (item) =>
       (viewTable +=
