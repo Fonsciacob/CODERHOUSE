@@ -1,0 +1,41 @@
+.inputEmail,
+.inputPass {
+  width: 60%;
+  border-radius: 13px;
+  outline: none;
+  height: 2.5rem;
+  border: 1px solid rgb(0, 122, 255);
+  padding: 7px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.btn {
+  margin: 0 6px;
+}
+
+#forms {
+  display: flex;
+  width: 740px;
+  border-radius: 15px;
+  height: 340px;
+  align-items: center;
+  box-shadow: 0px 10px 13px -7px rgb(99, 99, 102), 5px 5px 15px 5px rgb(99, 99, 102);
+}
+#loginUser {
+  width: 490px;
+}
+#signUp {
+  width: 0px;
+  overflow: hidden;
+}
+#forms > img {
+  width: 250px;
+  height: 340px;
+  border-radius: 15px;
+}

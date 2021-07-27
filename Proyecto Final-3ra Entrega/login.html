@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,27 +21,46 @@
   </head>
   <body>
     <div class="container vh-100 d-flex justify-content-center align-items-center">
-      <form class="w-50" id="loginUser">
-        <h1 class="text-center">SysCars</h1>
-        <div class="mb-3">
-          <label for="inputEmail" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" />
+      <div id="forms">
+        <div id="loginUser1">
+          <form id="loginUser">
+            <h1 class="text-center">Sign In</h1>
+            <div class="inputs">
+              <input type="email" class="inputEmail" id="inputEmail" aria-describedby="emailHelp" placeholder="Email" />
+            </div>
+            <div class="inputs">
+              <input type="password" class="inputPass" id="inputPass" placeholder="Password" />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary">Sign In</button>
+              <button type="button" class="btn btn-secondary" id="btnSignUp">Sign Up</button>
+            </div>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="inputPass" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPass" />
+        <img src="./images/form.jpg" />
+        <div>
+          <form id="signUp">
+            <h1 class="text-center">Sign Up</h1>
+            <div class="inputs">
+              <input type="email" class="inputEmail" id="inputEmailUser1" aria-describedby="emailHelp" placeholder="Email" />
+            </div>
+            <div class="inputs">
+              <input type="password" class="inputPass" id="inputPassword1" placeholder="Password" />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-secondary" id="btnRegister">Register</button>
+            </div>
+          </form>
         </div>
-        <div class="d-flex justify-content-between">
-          <button type="submit" class="btn btn-primary">Sign In</button>
-          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#registerUser">Sign Up</button>
-        </div>
-      </form>
+      </div>
     </div>
 
     <div id="moduleRegisterUser"></div>
 
     <!--Class-->
     <script src="./class/users.js"></script>
+    <!--Animations-->
+    <script src="./animation/signUp.js"></script>
     <!--Functions-->
     <script src="./functions/login/modalRegisterUser.js"></script>
     <script src="./functions/login/newUser.js"></script>
