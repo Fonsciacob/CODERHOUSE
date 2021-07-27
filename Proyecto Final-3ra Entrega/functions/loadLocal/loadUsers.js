@@ -1,5 +1,5 @@
 const loadLocalUsers = () => {
-  let objUsers = JSON.parse(localStorage.getItem("users"));
+  let objUsers = JSON.parse(localStorage.getItem("users")) || [];
   if (objUsers.length > 0) {
     for (let i = 0; i < objUsers.length; i++) {
       let objCredentials = new Credentials(objUsers[i].credentials.email, objUsers[i].credentials.password);
