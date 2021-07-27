@@ -21,6 +21,7 @@
 
 #forms {
   display: flex;
+  overflow: hidden;
   width: 740px;
   border-radius: 15px;
   height: 340px;

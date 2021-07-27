@@ -1,8 +1,12 @@
 $("#btnSignUp").click(() => {
-  $("#loginUser").css("width", "0");
-  $("#loginUser").css("overflow", "hidden");
-  $("#loginUser").css("opacity", "0");
-  $("#loginUser").css("transition", "all .3s");
+  $("#loginUser").animate(
+    {
+      width: "0",
+      overflow: "hidden",
+      opacity: "0",
+    },
+    "fast"
+  );
 
   $("#signUp").css("width", "490px");
 });
