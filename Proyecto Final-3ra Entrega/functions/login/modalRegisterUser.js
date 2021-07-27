@@ -33,5 +33,3 @@ const modalRegisterUser = () => {
 
   document.getElementById("moduleRegisterUser").innerHTML = modal;
 };
-
-modalRegisterUser();

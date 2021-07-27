@@ -1,6 +1,6 @@
 var users = [];
 
-const inputDatesUser = document.getElementById("formNewUser");
+const inputDatesUser = document.getElementById("signUp");
 
 inputDatesUser.onsubmit = (e) => {
   e.preventDefault();
