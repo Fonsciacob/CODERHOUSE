@@ -1,1 +1,2 @@
 loadLocalUsers();
+signInUser();
