@@ -7,8 +7,12 @@ function newAuto(e) {
   let costo = document.getElementById("inputCosto").value;
   let state = document.getElementById("inputState").value;
 
-  if (marca == "" || type == "" || country == "" || date == "" || costo == "" || state == "") {
-    alert("Ingesar Datos!");
+  if (marca == "" || type == "" || country == "" || date == "" || costo == "" || state == "" || costo < 1000) {
+    if (costo < 1000) {
+      alert("Ingrese un costo mayor o igual a $1000");
+    } else {
+      alert("Ingesar Datos!");
+    }
   } else {
     let objFabricacion = new Fabricacion(country, date);
     let objAuto = new Auto(marca, type, objFabricacion, costo, state);
