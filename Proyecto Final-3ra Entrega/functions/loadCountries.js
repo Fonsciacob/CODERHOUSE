@@ -10,5 +10,6 @@ const loadCountries = () => {
         localStorage.setItem("countries", JSON.stringify(json));
       }
       loadCountryCars();
+      loadCountryCarsUpdate();
     });
 };

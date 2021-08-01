@@ -10,5 +10,6 @@ const loadBrandCars = () => {
         localStorage.setItem("brandCars", JSON.stringify(json));
       }
       loadBrands();
+      loadBrandsCarsUpdate();
     });
 };

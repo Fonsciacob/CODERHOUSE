@@ -1,0 +1,42 @@
+<div class="modal fade" id="updateModalVehicle" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title text-light" id="updateModal">Update vehicle</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="formUpdateCar">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="upMarca" class="form-label">Car brand</label>
+            <select class="form-select" id="upMarca"></select>
+          </div>
+          <div class="mb-3">
+            <label for="upModel" class="form-label">Model</label>
+            <input type="text" class="form-control" id="upModel" />
+          </div>
+          <div class="mb-3">
+            <label for="upCountry" class="form-label">Country</label>
+            <select class="form-select" id="upCountry"></select>
+          </div>
+          <div class="mb-3">
+            <label for="upDate" class="form-label">Date of production (dd/mm/aaaa)</label>
+            <input type="date" class="form-control" id="upDate" />
+          </div>
+          <div class="mb-3">
+            <label for="upCosto" class="form-label">Price</label>
+            <input type="number" class="form-control" id="upCosto" min="1000" />
+          </div>
+          <div class="mb-3">
+            <label for="upState" class="form-label">State</label>
+            <select class="form-select" id="upState">
+              <option>New</option>
+              <option>Used</option>
+            </select>
+          </div>
+          <button type="button" onclick="updateAuto(event)" class="btn btn-primary" id="update">Update</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
