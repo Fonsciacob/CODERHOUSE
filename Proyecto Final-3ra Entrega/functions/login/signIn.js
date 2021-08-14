@@ -8,6 +8,8 @@ const signInUser = () => {
 
     if (verify != undefined) {
       window.location.href = "index.html";
+    } else {
+      alert("Usuario no encontrado");
     }
   });
 };
