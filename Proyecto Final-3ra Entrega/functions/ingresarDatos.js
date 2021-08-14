@@ -1,5 +1,6 @@
 function newAuto(e) {
   e.preventDefault();
+
   let marca = document.getElementById("inputMarca").value;
   let type = document.getElementById("inputModel").value;
   let country = document.getElementById("inputCountry").value;

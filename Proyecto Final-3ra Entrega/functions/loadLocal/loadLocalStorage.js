@@ -3,6 +3,7 @@
 //Si hay datos del array "automoviles" en el localStorage, procederá a instanciarse nuevamente al array
 const loadLocal = () => {
   let objAuto = JSON.parse(localStorage.getItem("automoviles")) || [];
+
   if (objAuto.length > 0) {
     for (let i = 0; i < objAuto.length; i++) {
       let fabricacion = new Fabricacion(objAuto[i].fabricacion.pais, objAuto[i].fabricacion.fecha);

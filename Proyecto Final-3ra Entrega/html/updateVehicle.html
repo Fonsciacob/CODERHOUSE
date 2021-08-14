@@ -7,6 +7,9 @@
       </div>
       <form id="formUpdateCar">
         <div class="modal-body">
+          <div>
+            <input type="text" id="idCar" hidden />
+          </div>
           <div class="mb-3">
             <label for="upMarca" class="form-label">Car brand</label>
             <select class="form-select" id="upMarca"></select>
@@ -34,7 +37,7 @@
               <option>Used</option>
             </select>
           </div>
-          <button type="button" onclick="updateAuto(event)" class="btn btn-primary" id="update">Update</button>
+          <button type="button" onclick="updateAuto()" class="btn btn-primary" id="update">Update</button>
         </div>
       </form>
     </div>
